@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <environment include="Development">
+        <link href="~/css/bootstrap.css" rel="stylesheet" />
+        <script src="~/js/bootstrap.min.js"></script>
+        <script src="~/js/jquery.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <link href="~/prod/bootstrap.css" rel="stylesheet" />
+    </environment>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
